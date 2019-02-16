@@ -1,0 +1,116 @@
+<!DOCTYE html>
+<html>
+<head>
+    <title>Brains' Clinic</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+<div class="topnav" id="Topnav">
+    <a href="home.html">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+        <br>
+<div class="intro">
+    <h1>welcome to brains' clinic.</h1>
+    <br>
+    <br>
+        </div>
+            <img src="brain.jpg" width="200" height="275">
+            <br>
+        <h2>Who we are</h2>
+        <p>We are a group of ambitious physicians, researchers and mental health professionals who received training in Neurology, Psychiatry, Sleep Medicine (Ain Shams University), Neurophysiology (namely EEG and EMG) at Cleveland Clinic (USA) and Transcranial Magnetic Stimulation (Germany). Please check the appendix for national and international collaborations and references.</p>
+        <br>
+        <h2>What are our services?</h2>
+        <p>Medical management is subdivided into diagnosis (for which we have the most recent equipment) and treatment. Our most unique apparatus is the TMS which is an FDA approved mode of treatment for depression. Newer research demonstrates that this could be used in other psychiatric (e.g. OCD, Autism, ADHD, anxiety, sleep disorders) and neurological disorders (e.g. aphasia, strokes, Cerebral Palsy, Carbon Monoxide poisoning).</p>
+        <br>
+<button class="collapsible" id="services">Neurology <i class="fas fa-caret-down"></i></button>
+<div class="content">
+     <p><b>Diagnosis</b></p>
+   <ol>
+    <li>Neurological Examination</li>
+    <li>EMG</li>
+    <li>Nerve conduction</li>
+    <li>EEG (routine and long term video)</li>
+    </ol>
+    <br>
+         <p><b>Treatment</b></p>
+    <ol>
+    <li>Proposal for medication plan</li>
+    <li>TMS</li>
+    </ol>
+    <br>
+</div>
+<button class="collapsible">Psychiatry <i class="fas fa-caret-down"></i></button>
+<div class="content">
+       <p><b>Diagnosis</b></p>
+ <ol>
+    <li>Psychiatric Examination</li>
+    <li>Psychological testing</li>
+    </ol>
+    <br>
+         <p><b>Treatment</b></p>
+    <ol>
+    <li>CBT</li>
+    <li>Proposal for medication plan</li>
+    <li>TMS</li>
+    </ol>
+    <br>
+</div>
+<button class="collapsible">Sleep Medicine <i class="fas fa-caret-down"></i></button>
+<div class="content">
+          <p><b>Diagnosis</b></p>
+    <ol>
+    <li>PSG (also known as Sleep Lab)</li>
+    <li>CPAP</li>
+    </ol>
+    <br>
+         <p><b>Treatment</b></p>
+    <ol>
+    <li>CBT</li>
+    <li>Medication proposal</li>
+    <li>CPAP</li>
+    </ol>
+    <br> 
+</div>
+        <br>
+        <h2>Others</h2>
+        <p>We are one of the few clinics in the region to provide physician escort for both psychiatry and neurology cases. We collaborate with other centers in Egypt and around the globe not only regarding patient services but also in research.</p>
+        <br>
+      <h2 id="contact">Contact us</h2>
+        <p>Our address is 14w/4, Hassan Nassar St. Takseem EL1aselky, New Maadi (behind Caltex off Nasr St.). For more information, please contact us on contact@mentalhealth-clinic.com or call 01155411911 or 01010990101.</p>  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+    </body>
+        <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("Topnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+</html>
